@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CPU Scheduling</string>
+    <string name="editmessage">Enter the message</string>
+    <string name="Pname">Enter processor name</string>
+    <string name="Atime">Enter Arrival time</string>
+    <string name="Btime">Enter Burst time</string>
+    <string name="Priority">Enter Priority</string>
+    <string name="Processor">Processor ID</string>
+</resources>

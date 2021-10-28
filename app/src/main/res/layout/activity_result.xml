@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Result"
+    android:background="@drawable/images"
+    >
+
+    <TextView
+        android:id="@+id/result_algo_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="LONGEST JOB FIRST"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/lin_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_algo_text_view"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/result_pid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/result_algo_text_view"
+            android:layout_margin="4dp"
+            android:layout_weight="0.08"
+            android:ems="10"
+            android:inputType="number"
+            android:text="PID"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/result_burst_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/result_algo_text_view"
+            android:layout_margin="4dp"
+            android:layout_weight="0.24"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Burst Time"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/result_wait_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/result_algo_text_view"
+            android:layout_margin="4dp"
+            android:layout_weight="0.29"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Waiting Time"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/result_turn_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/result_algo_text_view"
+            android:layout_margin="4dp"
+            android:layout_weight="0.39"
+            android:ems="10"
+            android:inputType="number"
+            android:text="TurnAround Time"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/act_lin_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_lay"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/result_act_pid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lin_lay"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_weight="0.08"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/result_act_burst_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lin_lay"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_weight="0.24"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/result_act_wait_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lin_lay"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_weight="0.29"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/result_act_turn_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lin_lay"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_weight="0.39"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/avg_wait_lin_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/act_lin_lay"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/act_lin_lay"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_weight="0.81"
+            android:ems="10"
+            android:text="Average Waiting Time"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/avg_wait_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lin_lay"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_weight="0.20"
+            android:ems="10"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avg_wait_lin_lay"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/avg_wait_lin_lay"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_weight="0.8"
+            android:ems="10"
+            android:text="Average TurnAround Time"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/avg_turn_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/avg_wait_lin_lay"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_weight="0.20"
+            android:ems="10"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>
